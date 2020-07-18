@@ -4,16 +4,18 @@
 /// @group    Configurações
 
 $colors: (
-  primary     : #f68931,
+  primary     : #ff8200,
   light: (
-    darken    : #acacac,
+    darker    : #f8f8f8,
+    darken    : #f0f0f0,
     base      : #ffffff,
   ),
   dark: (
-    base      : #282828,
-    dark      : #000000,
-    darker    : #333333,
-    darken    : #666666,
+    lighten    : #666666,
+    lighter    : #5a5a5a,
+    base       : #222222,
+    dark       : #000000,
+    darker     : #151515,
   ),
   danger      : #f85757,
   success     : #a4cb1b,
