@@ -1,6 +1,45 @@
 section {
     padding: space(g) 0;
 
+    &.lead {
+        background-color: color(dark, darken);
+        color: color(light);
+
+        p {
+            margin: space(gg) 0;
+
+            color: color(light);
+        }
+
+        hr {
+            margin: (space(gg) * 2) 0 0;
+            width: 100%;
+            height: 1px;
+
+            background-color: color(dark);
+        }
+
+        .form {
+            > div {
+                padding: space(m) space(g);
+
+                background-color: color(dark);
+                border-radius: 5px;
+
+                p {
+                    margin: space(p) 0;
+
+                    font-size: font-size(small);
+                    color: color(dark, lighten);
+
+                    small {
+                        font-size: 80%;;
+                    }
+                }
+            }
+        }
+    }
+
     &.solutions {
         background-color: color(dark, darken);
         color: color(light);
@@ -59,9 +98,15 @@ section {
         background: linear-gradient(to bottom,  #f0f0f0 0%,#efefef 100%,#f0f0f0 100%,#f7f7f7 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f7f7f7',GradientType=0 );
         color: color(dark);
+
+        img {
+            width: 90%;
+        }
     }
 
     &.remember {
+        padding: space(xg) 0;
+
         background-color: color(light);
         color: color(dark);
 

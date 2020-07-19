@@ -77,8 +77,15 @@ td {
 \*------------------------------------*/
 h2 {
   font-family: Montserrat;
-  font-weight: 100;
-  font-size: 3.125rem; }
+  font-weight: 300;
+  font-size: 2.8125rem; }
+  @media (max-width: 48em) {
+    h2 {
+      font-size: 2.375rem; } }
+  h2 span {
+    display: block;
+    width: 70%;
+    color: #ff8200; }
 
 h3 {
   font-family: Montserrat;
@@ -91,6 +98,9 @@ h4 {
   font-family: Montserrat;
   font-weight: 700;
   font-size: 1.375rem; }
+  h4 span {
+    display: block;
+    color: #ff8200; }
 
 h5 {
   font-family: Montserrat;
@@ -113,8 +123,56 @@ strong {
 /*------------------------------------*\
     FORM
 \*------------------------------------*/
-input::placeholder {
-  color: inherit; }
+input {
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 100%;
+  padding: 8px;
+  font-size: 0.75rem;
+  color: #f0f0f0;
+  background-color: #000000;
+  border-color: #222222;
+  border-radius: 5px; }
+  input::placeholder {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: inherit; }
+
+textarea {
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 100%;
+  padding: 16px;
+  font-size: 0.75rem;
+  color: #f0f0f0;
+  background-color: #000000;
+  border-color: #222222;
+  border-radius: 5px; }
+  textarea::placeholder {
+    color: inherit; }
+
+a.btn,
+[type="submit"].btn,
+button.btn {
+  font-family: Montserrat;
+  font-weight: 700;
+  display: block;
+  width: 100%; }
+  a.btn-primary,
+  [type="submit"].btn-primary,
+  button.btn-primary {
+    background-color: #ff8200;
+    border: none; }
+    a.btn-primary:not(:disabled):not(.disabled).active, a.btn-primary:not(:disabled):not(.disabled):active, a.btn-primary:active, a.btn-primary:hover,
+    [type="submit"].btn-primary:not(:disabled):not(.disabled).active,
+    [type="submit"].btn-primary:not(:disabled):not(.disabled):active,
+    [type="submit"].btn-primary:active,
+    [type="submit"].btn-primary:hover,
+    button.btn-primary:not(:disabled):not(.disabled).active,
+    button.btn-primary:not(:disabled):not(.disabled):active,
+    button.btn-primary:active,
+    button.btn-primary:hover {
+      background-color: #cc6800; }
 
 /*------------------------------------*\
     HEADER
@@ -174,6 +232,27 @@ main {
 \*------------------------------------*/
 section {
   padding: 32px 0; }
+  section.lead {
+    background-color: #0e0e0e;
+    color: #ffffff; }
+    section.lead p {
+      margin: 48px 0;
+      color: #ffffff; }
+    section.lead hr {
+      margin: 96px 0 0;
+      width: 100%;
+      height: 1px;
+      background-color: #222222; }
+    section.lead .form > div {
+      padding: 24px 32px;
+      background-color: #222222;
+      border-radius: 5px; }
+      section.lead .form > div p {
+        margin: 8px 0;
+        font-size: 0.75rem;
+        color: #666666; }
+        section.lead .form > div p small {
+          font-size: 80%; }
   section.solutions {
     background-color: #0e0e0e;
     color: #ffffff; }
@@ -217,7 +296,10 @@ section {
     background: linear-gradient(to bottom, #f0f0f0 0%, #efefef 100%, #f0f0f0 100%, #f7f7f7 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f7f7f7',GradientType=0 );
     color: #222222; }
+    section.company img {
+      width: 90%; }
   section.remember {
+    padding: 56px 0;
     background-color: #ffffff;
     color: #222222; }
     section.remember a {

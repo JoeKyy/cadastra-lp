@@ -1,9 +1,20 @@
 h1 {}
 
 h2 {
-    @include font(thin);
+    @include responsive(medium, max) {
+        font-size: font-size(xbig);
+    }
+
+    @include font(light);
 
     font-size: font-size(xxbig);
+
+    span {
+        display: block;
+        width: 70%;
+
+        color: color(primary);
+    }
 }
 
 h3 {
@@ -20,6 +31,11 @@ h4 {
     @include font(bold);
 
     font-size: font-size(big);
+
+    span {
+        display: block;
+        color: color(primary);
+    }
 }
 
 h5 {
