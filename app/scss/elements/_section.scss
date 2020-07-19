@@ -1,4 +1,7 @@
 section {
+    position: relative;
+    overflow: hidden;
+
     padding: space(g) 0;
 
     &.lead {
@@ -52,8 +55,236 @@ section {
         }
     }
 
+    &.credentials {
+        background-color: color(light);
+        color: color(dark, dark);
+
+        .slider {
+            .slick-list {
+                padding-top: 60px;
+                max-height: 500px;
+            }
+
+            .slick-slide {
+                position: relative;
+                opacity: 0;
+                transition: all .5s ease-out;
+
+                &.slick-current {
+                    z-index: 0;
+                    right: -30px;
+                    transform: scale(.9);
+                    opacity: 1;
+
+                    margin-right: (- space(m));
+                    margin-left: (space(m));
+
+                    &:before {
+                        content: '';
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 2;
+
+                        width: 95%;
+                        height: 95%;
+                        margin: auto;
+
+                        background-color: color(dark, dark);
+                        opacity: .6;
+                    }
+
+                    + .slick-active {
+                        z-index: 1;
+                        opacity: 1;
+                        transform: scale(1.5);
+
+                        + .slick-active {
+                            z-index: 0;
+                            opacity: 1;
+                            left: -30px;
+                            right: inherit;
+                            transform: scale(.9);
+
+                            margin-left: (- space(m));
+                            margin-right: space(g);
+
+                            &:before {
+                                content: '';
+
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                z-index: 2;
+
+                                width: 95%;
+                                height: 95%;
+                                margin: auto;
+
+                                background-color: color(dark, dark);
+                                opacity: .6;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .slick-arrow {
+                @include hidden-text();
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10;
+
+                margin: auto;
+                width: 43px;
+                height: 43px;
+
+                background-color: color(primary);
+                border-radius: 50%;
+
+                &.slick-prev {
+                    margin-left: 0;
+                    &:before {
+                        content: '';
+
+                        position: absolute;
+                        top: 0;
+                        left: -2px;
+                        right: 0;
+                        bottom: 0;
+
+                        width: 0;
+                        height: 0;
+                        margin: auto;
+
+                        border-style: solid;
+                        border-width: 8px 8px 8px 0;
+                        border-color: transparent color(light) transparent transparent;
+                    }
+                    &:after {
+                        content: '';
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+
+                        width: 0;
+                        height: 0;
+                        margin: auto;
+
+                        border-style: solid;
+                        border-width: 8px 8px 8px 0;
+                        border-color: transparent color(primary) transparent transparent;
+                    }
+                }
+                &.slick-next {
+                    margin-right: 0;
+                    &:before {
+                        content: '';
+
+                        position: absolute;
+                        top: 0;
+                        left: 2px;
+                        right: 0;
+                        bottom: 0;
+
+                        width: 0;
+                        height: 0;
+                        margin: auto;
+
+                        border-style: solid;
+                        border-width: 8px 0 8px 8px;
+                        border-color: transparent transparent transparent color(light);
+                    }
+                    &:after {
+                        content: '';
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+
+                        width: 0;
+                        height: 0;
+                        margin: auto;
+
+                        border-style: solid;
+                        border-width: 8px 0 8px 8px;
+                        border-color: transparent transparent transparent color(primary);
+                    }
+                }
+            }
+
+            .slick-dots {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                margin: auto auto 0px;
+                width: 230px;
+                height: 25px;
+
+                li {
+                    @include hidden-text();
+
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: space(p);
+
+                    background-color: color(dark, dark);
+                    border-radius: 50%;
+
+                    &.slick-active {
+                        background-color: color(primary);
+                    }
+                }
+            }
+
+            figure {
+                position: relative;
+
+                figcaption {
+                    @include font(base);
+
+                    position: absolute;
+                    bottom: 30px;
+
+                    width: 100%;
+                    padding: 0 space(m);
+
+                    font-size: font-size(xsmall);
+                    text-align: center;
+                    color: color(light);
+
+                    strong {
+                        color: color(primary);
+                    }
+
+                    &.white {
+                        color: color(dark, dark);
+                    }
+                }
+            }
+        }
+    }
+
     &.business {
-        background-color: color(dark, darken);
+        background-color: color(dark, dark);
         color: color(light);
 
         img {

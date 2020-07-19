@@ -231,6 +231,8 @@ main {
     SECTION
 \*------------------------------------*/
 section {
+  position: relative;
+  overflow: hidden;
   padding: 32px 0; }
   section.lead {
     background-color: #0e0e0e;
@@ -260,8 +262,169 @@ section {
       color: #666666; }
       section.solutions p strong {
         color: #ff8200; }
+  section.credentials {
+    background-color: #ffffff;
+    color: #000000; }
+    section.credentials .slider .slick-list {
+      padding-top: 60px;
+      max-height: 500px; }
+    section.credentials .slider .slick-slide {
+      position: relative;
+      opacity: 0;
+      transition: all .5s ease-out; }
+      section.credentials .slider .slick-slide.slick-current {
+        z-index: 0;
+        right: -30px;
+        transform: scale(0.9);
+        opacity: 1;
+        margin-right: -24px;
+        margin-left: 24px; }
+        section.credentials .slider .slick-slide.slick-current:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 2;
+          width: 95%;
+          height: 95%;
+          margin: auto;
+          background-color: #000000;
+          opacity: .6; }
+        section.credentials .slider .slick-slide.slick-current + .slick-active {
+          z-index: 1;
+          opacity: 1;
+          transform: scale(1.5); }
+          section.credentials .slider .slick-slide.slick-current + .slick-active + .slick-active {
+            z-index: 0;
+            opacity: 1;
+            left: -30px;
+            right: inherit;
+            transform: scale(0.9);
+            margin-left: -24px;
+            margin-right: 32px; }
+            section.credentials .slider .slick-slide.slick-current + .slick-active + .slick-active:before {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              z-index: 2;
+              width: 95%;
+              height: 95%;
+              margin: auto;
+              background-color: #000000;
+              opacity: .6; }
+    section.credentials .slider .slick-arrow {
+      overflow: hidden;
+      text-indent: -9999px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      margin: auto;
+      width: 43px;
+      height: 43px;
+      background-color: #ff8200;
+      border-radius: 50%; }
+      section.credentials .slider .slick-arrow.slick-prev {
+        margin-left: 0; }
+        section.credentials .slider .slick-arrow.slick-prev:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -2px;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          margin: auto;
+          border-style: solid;
+          border-width: 8px 8px 8px 0;
+          border-color: transparent #ffffff transparent transparent; }
+        section.credentials .slider .slick-arrow.slick-prev:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          margin: auto;
+          border-style: solid;
+          border-width: 8px 8px 8px 0;
+          border-color: transparent #ff8200 transparent transparent; }
+      section.credentials .slider .slick-arrow.slick-next {
+        margin-right: 0; }
+        section.credentials .slider .slick-arrow.slick-next:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 2px;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          margin: auto;
+          border-style: solid;
+          border-width: 8px 0 8px 8px;
+          border-color: transparent transparent transparent #ffffff; }
+        section.credentials .slider .slick-arrow.slick-next:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          margin: auto;
+          border-style: solid;
+          border-width: 8px 0 8px 8px;
+          border-color: transparent transparent transparent #ff8200; }
+    section.credentials .slider .slick-dots {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto auto 0px;
+      width: 230px;
+      height: 25px; }
+      section.credentials .slider .slick-dots li {
+        overflow: hidden;
+        text-indent: -9999px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+        background-color: #000000;
+        border-radius: 50%; }
+        section.credentials .slider .slick-dots li.slick-active {
+          background-color: #ff8200; }
+    section.credentials .slider figure {
+      position: relative; }
+      section.credentials .slider figure figcaption {
+        font-family: Montserrat;
+        font-weight: 400;
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        padding: 0 24px;
+        font-size: 0.5rem;
+        text-align: center;
+        color: #ffffff; }
+        section.credentials .slider figure figcaption strong {
+          color: #ff8200; }
+        section.credentials .slider figure figcaption.white {
+          color: #000000; }
   section.business {
-    background-color: #0e0e0e;
+    background-color: #000000;
     color: #ffffff; }
     section.business img {
       display: block;
