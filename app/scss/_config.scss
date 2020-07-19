@@ -16,6 +16,7 @@ $colors: (
     base       : #222222,
     dark       : #000000,
     darker     : #151515,
+    darken     : #0e0e0e,
   ),
   danger      : #f85757,
   success     : #a4cb1b,
@@ -56,10 +57,11 @@ $font-fallback: Tahoma, Verdana, Segoe, sans-serif !default;
 
 /// @group    Fontes
 $font-sizes: (
-  xbig		  :	  30px,
+  xxbig		  :	  50px,
+  xbig		  :	  38px,
   big		    :	  22px,
   large		  :	  18px,
-  medium		:	  16px,
+  medium		:	  15px,
   normal		:	  14px,
   small		  :	  12px
 ) !default;

@@ -1,7 +1,7 @@
 html {
     @include font(base, $fallback: true);
     @include responsive(medium, max) {
-        font-size: (font-size(medium, $rem: false));
+        font-size: (font-size(normal, $rem: false));
     }
 
     font-size: (font-size(medium, $rem: false));
@@ -13,7 +13,7 @@ body {
         overflow-x: inherit;
     }
 
-    background-color: color(dark, dark);
+    background-color: color(dark, darken);
 
     width: 100%;
 

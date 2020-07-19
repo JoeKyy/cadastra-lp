@@ -1,12 +1,32 @@
 h1 {}
 
-h2 {}
+h2 {
+    @include font(thin);
 
-h3 {}
+    font-size: font-size(xxbig);
+}
 
-h4 {}
+h3 {
+    @include font(bold);
 
-h5 {}
+    font-size: font-size(xbig);
+
+    span {
+        color: color(primary);
+    }
+}
+
+h4 {
+    @include font(bold);
+
+    font-size: font-size(big);
+}
+
+h5 {
+    @include font(bold);
+
+    font-size: font-size(large);
+}
 
 h6 {}
 
