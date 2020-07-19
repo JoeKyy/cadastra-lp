@@ -189,7 +189,7 @@ header {
     font-family: Montserrat;
     font-weight: 500;
     background-image: url("../images/sprite.png");
-    background-position: -55px -93px;
+    background-position: -466px -370px;
     width: 112px;
     height: 17px;
     overflow: hidden;
@@ -237,6 +237,15 @@ section {
   section.lead {
     background-color: #0e0e0e;
     color: #ffffff; }
+    section.lead:before {
+      content: '';
+      background-image: url("../images/sprite.png");
+      background-position: -466px 0px;
+      width: 311px;
+      height: 312px;
+      position: absolute;
+      top: -100px;
+      right: 0; }
     section.lead p {
       margin: 48px 0;
       color: #ffffff; }
@@ -263,8 +272,29 @@ section {
       section.solutions p strong {
         color: #ff8200; }
   section.credentials {
-    background-color: #ffffff;
+    background-color: #e6e7e9;
+    background-image: url(../images/bg-bottom.jpg);
+    background-repeat: repeat-x;
+    background-position: center bottom;
     color: #000000; }
+    section.credentials:before {
+      content: '';
+      background-image: url("../images/sprite.png");
+      background-position: -310px -388px;
+      width: 113px;
+      height: 114px;
+      position: absolute;
+      top: -85px;
+      right: 250px; }
+    section.credentials:after {
+      content: '';
+      background-image: url("../images/sprite.png");
+      background-position: 0px -388px;
+      width: 310px;
+      height: 310px;
+      position: absolute;
+      top: 0;
+      left: 0; }
     section.credentials .slider .slick-list {
       padding-top: 60px;
       max-height: 500px; }
@@ -426,6 +456,24 @@ section {
   section.business {
     background-color: #000000;
     color: #ffffff; }
+    section.business:before {
+      content: '';
+      background-image: url("../images/sprite.png");
+      background-position: 0px 0px;
+      width: 466px;
+      height: 388px;
+      position: absolute;
+      top: -135px;
+      left: 0; }
+    section.business:after {
+      content: '';
+      background-image: url("../images/sprite.png");
+      background-position: -548px -312px;
+      width: 94px;
+      height: 47px;
+      position: absolute;
+      top: -10px;
+      right: 200px; }
     section.business img {
       display: block;
       width: 100%;
@@ -485,7 +533,7 @@ footer {
     font-family: Montserrat;
     font-weight: 500;
     background-image: url("../images/sprite.png");
-    background-position: -55px -93px;
+    background-position: -466px -370px;
     width: 112px;
     height: 17px;
     overflow: hidden;
