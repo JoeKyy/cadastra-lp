@@ -265,6 +265,8 @@ section {
         section.lead .form > div p small {
           font-size: 80%; }
   section.solutions {
+    margin-top: -24px;
+    padding-top: 0;
     background-color: #0e0e0e;
     color: #ffffff; }
     section.solutions p {
@@ -360,6 +362,7 @@ section {
       width: 43px;
       height: 43px;
       background-color: #ff8200;
+      border: none;
       border-radius: 50%; }
       section.credentials .slider .slick-arrow.slick-prev {
         margin-left: 0; }
@@ -454,6 +457,7 @@ section {
         section.credentials .slider figure figcaption.white {
           color: #000000; }
   section.business {
+    padding-top: 56px;
     background-color: #000000;
     color: #ffffff; }
     section.business:before {

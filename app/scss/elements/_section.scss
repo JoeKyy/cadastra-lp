@@ -54,6 +54,9 @@ section {
     }
 
     &.solutions {
+        margin-top: (- space(m));
+        padding-top: 0;
+
         background-color: color(dark, darken);
         color: color(light);
 
@@ -182,6 +185,7 @@ section {
                 height: 43px;
 
                 background-color: color(primary);
+                border: none;
                 border-radius: 50%;
 
                 &.slick-prev {
@@ -317,6 +321,8 @@ section {
     }
 
     &.business {
+        padding-top: space(xg);
+
         background-color: color(dark, dark);
         color: color(light);
 
