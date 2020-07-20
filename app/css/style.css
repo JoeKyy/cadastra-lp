@@ -210,6 +210,8 @@ html {
       font-size: 14px; } }
 
 body {
+  font-family: Montserrat;
+  font-weight: 400;
   background-color: #0e0e0e;
   width: 100%;
   color: #ffffff;

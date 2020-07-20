@@ -8,6 +8,7 @@ html {
 }
 
 body {
+    @include font(base);
     @include responsive(large) {
         -webkit-overflow-scrolling: inherit;
         overflow-x: inherit;
