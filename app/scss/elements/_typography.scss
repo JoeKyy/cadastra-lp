@@ -5,7 +5,7 @@ h2 {
         font-size: font-size(xbig);
     }
 
-    @include font(light);
+    @include font(bold);
 
     font-size: font-size(xxbig);
 
