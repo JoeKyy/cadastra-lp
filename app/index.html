@@ -64,7 +64,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xl-12">
-                                    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+                                    <form action="https://um1.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
                                         <div class="row">
                                             <div class="col-md">
                                                 <div class="form-group">
@@ -114,14 +114,18 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-md">
+                                                <p class="success"><strong>Obrigado! Sua mensagem foi enviada com sucesso.</strong></p>
+                                                <p class="error"><strong>Erro ao enviar a mensagem</strong></p>
                                                 <p>
                                                     <small>Ao realizar o contato você também autoriza a Cadastra a enviar conteúdos de seu interesse. Respeitamos a sua privacidade e não disparamos spam.</small>
                                                 </p>
                                             </div>
                                         </div>
-                                        <input type=hidden name="lead_source" value="LP_Serviços_mai/2019">
-                                        <input type=hidden name="oid" value="00D1U000000xcBP">
-                                        <input type=hidden name="retURL" value="http://">
+                                        <input type="hidden" name="debug" value=1>
+                                        <input type="hidden" name="debugEmail" value="contato@joekyy.com.br">
+                                        <input type="hidden" name="lead_source" value="LP_Serviços_mai/2019">
+                                        <input type="hidden" name="oid" value="00D1U000000xcBP">
+                                        <input type="hidden" name="retURL" value="http://">
                                     </form>
                                 </div>
                             </div>

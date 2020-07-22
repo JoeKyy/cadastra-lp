@@ -48,6 +48,20 @@ section {
                     small {
                         font-size: 80%;;
                     }
+
+                    &.error {
+                        display: none;
+
+                        text-align: center;
+                        color: color(danger);
+                    }
+
+                    &.success {
+                        display: none;
+
+                        text-align: center;
+                        color: color(success);
+                    }
                 }
             }
         }

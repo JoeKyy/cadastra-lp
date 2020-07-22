@@ -1,4 +1,29 @@
 $(function () {
+	$('form').submit(function(event){
+		debugger
+		event.preventDefault();
+
+		var form = $(event.target);
+
+		$.ajax({
+				type: form.attr('method'),
+				url:  form.attr('action'),
+				headers: {
+					'Access-Control-Allow-Origin': '*'
+				},
+				data: form.serialize(),
+				crossOrigin: true,
+				crossDomain: true,
+				dataType : 'json',
+				success: function(data){
+					$('.error').hide();
+				},
+				error: function(data){
+					$('.error').show();
+				}
+			});
+	});
+
     $('.slider').slick({
 		dots: true,
 		infinite: true,

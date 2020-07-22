@@ -266,6 +266,14 @@ section {
         color: #666666; }
         section.lead .form > div p small {
           font-size: 80%; }
+        section.lead .form > div p.error {
+          display: none;
+          text-align: center;
+          color: #f85757; }
+        section.lead .form > div p.success {
+          display: none;
+          text-align: center;
+          color: #a4cb1b; }
   section.solutions {
     margin-top: -24px;
     padding-top: 0;
