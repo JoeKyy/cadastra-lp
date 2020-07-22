@@ -364,7 +364,7 @@
     "lodash.isfinite": "^3.3.2",
     "lodash.isequal": "^4.5.0",
     "lodash.keys": "^3.1.2",
-    "lodash.mergewith": "^4.6.1",
+    "lodash.mergewith": "^4.6.2",
     "lodash.template": "^3.6.2",
     "lodash.restparam": "^3.6.1",
     "lodash.templatesettings": "^3.1.1",
