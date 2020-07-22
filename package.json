@@ -28,7 +28,7 @@
     "uglifycss": "0.0.29"
   },
   "dependencies": {
-    "acorn": "^5.7.1",
+    "acorn": "^5.7.4",
     "abbrev": "^1.1.1",
     "after": "^0.8.2",
     "ajv": "^5.5.2",
