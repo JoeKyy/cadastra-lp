@@ -1,6 +1,5 @@
 $(function () {
 	$('form').submit(function(event){
-		debugger
 		event.preventDefault();
 
 		var form = $(event.target);
@@ -16,6 +15,7 @@ $(function () {
 				crossDomain: true,
 				dataType : 'json',
 				success: function(data){
+					$('.success').show();
 					$('.error').hide();
 				},
 				error: function(data){
