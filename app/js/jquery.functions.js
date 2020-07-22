@@ -20,6 +20,7 @@ $(function () {
 				},
 				error: function(data){
 					$('.error').show();
+					$('.success').hide();
 				}
 			});
 	});
