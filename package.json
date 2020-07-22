@@ -9,7 +9,7 @@
   "author": "Jhomar Nando",
   "license": "ISC",
   "devDependencies": {
-    "bootstrap-sass": "3.3.7",
+    "bootstrap-sass": "3.4.1",
     "browser-sync": "^2.26.10",
     "concat": "1.0.3",
     "del": "3.0.0",
