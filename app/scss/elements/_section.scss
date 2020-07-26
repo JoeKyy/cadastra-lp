@@ -24,8 +24,11 @@ section {
 
         h2 {
             ~ p {
+                @include font(base);
+
                 margin: space(gg) 0;
 
+                font-size: font-size(large);
                 color: color(light);
 
                 strong {
@@ -33,13 +36,6 @@ section {
 
                     color: inherit;
                 }
-            }
-        }
-
-        p {
-            font-size: font-size(normal);
-            strong {
-                color: color(primary);
             }
         }
 
@@ -52,6 +48,8 @@ section {
         }
 
         .form {
+            position: relative;
+            z-index: 10;
             > div {
                 padding: space(m) space(g);
 
@@ -90,22 +88,25 @@ section {
         }
     }
 
-    // &.solutions {
-    //     @include responsive(large) {
-    //         margin-top: (- space(m));
-    //     }
-    //     padding-top: 0;
+    &.solutions {
+        @include responsive(large) {
+            margin-top: (- space(xg) * 4);
+        }
+        padding-top: 0;
 
-    //     background-color: color(dark, darken);
-    //     color: color(light);
+        background-color: color(dark, darken);
+        color: color(light);
 
-    //     p {
-    //         color: color(dark, lighten);
-    //         strong {
-    //             color: color(primary);
-    //         }
-    //     }
-    // }
+        p {
+            @include font(base);
+
+            font-size: font-size(medium);
+            color: color(light);
+            strong {
+                color: color(primary);
+            }
+        }
+    }
 
     &.credentials {
         @include responsive(large) {

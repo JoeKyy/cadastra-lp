@@ -46,7 +46,10 @@ h5 {
 
 h6 {}
 
-p {}
+p {
+    @include font(base);
+
+}
 
 hr {}
 

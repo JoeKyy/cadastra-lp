@@ -107,6 +107,10 @@ h5 {
   font-weight: 700;
   font-size: 1.125rem; }
 
+p {
+  font-family: Montserrat;
+  font-weight: 400; }
+
 a {
   color: inherit; }
   a:hover {
@@ -256,43 +260,59 @@ section {
         top: -100px;
         right: 0; } }
     section.lead h2 ~ p {
+      font-family: Montserrat;
+      font-weight: 400;
       margin: 48px 0;
+      font-size: 1.125rem;
       color: #ffffff; }
       section.lead h2 ~ p strong {
         font-family: Montserrat;
         font-weight: 700;
         color: inherit; }
-    section.lead p {
-      font-size: 0.875rem; }
-      section.lead p strong {
-        color: #ff8200; }
     section.lead hr {
       margin: 32px 0;
       width: 100%;
       height: 1px;
       background-color: #222222; }
-    section.lead .form > div {
-      padding: 24px 32px;
-      background-color: #222222;
-      border-radius: 5px; }
-      section.lead .form > div p {
-        margin: 8px 0;
-        font-size: 0.75rem;
-        color: #666666; }
-        section.lead .form > div p small {
-          font-size: 80%; }
-        section.lead .form > div p.error {
-          font-family: Montserrat;
-          font-weight: 700;
-          display: none;
-          text-align: center;
-          color: #f85757; }
-        section.lead .form > div p.success {
-          font-family: Montserrat;
-          font-weight: 700;
-          display: none;
-          text-align: center;
-          color: #ff8200; }
+    section.lead .form {
+      position: relative;
+      z-index: 10; }
+      section.lead .form > div {
+        padding: 24px 32px;
+        background-color: #222222;
+        border-radius: 5px; }
+        section.lead .form > div p {
+          margin: 8px 0;
+          font-size: 0.75rem;
+          color: #666666; }
+          section.lead .form > div p small {
+            font-size: 80%; }
+          section.lead .form > div p.error {
+            font-family: Montserrat;
+            font-weight: 700;
+            display: none;
+            text-align: center;
+            color: #f85757; }
+          section.lead .form > div p.success {
+            font-family: Montserrat;
+            font-weight: 700;
+            display: none;
+            text-align: center;
+            color: #ff8200; }
+  section.solutions {
+    padding-top: 0;
+    background-color: #0e0e0e;
+    color: #ffffff; }
+    @media (min-width: 75em) {
+      section.solutions {
+        margin-top: -224px; } }
+    section.solutions p {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 0.9375rem;
+      color: #ffffff; }
+      section.solutions p strong {
+        color: #ff8200; }
   section.credentials {
     background-color: #e6e7e9;
     background-image: url(../images/bg-bottom.jpg);
