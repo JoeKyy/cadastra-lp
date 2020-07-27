@@ -112,7 +112,8 @@ h5 {
 
 p {
   font-family: Montserrat;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 0.9375rem; }
 
 a {
   color: inherit; }
@@ -218,9 +219,6 @@ html {
   font-family: Montserrat, Tahoma, Verdana, Segoe, sans-serif;
   font-weight: 400;
   font-size: 15px; }
-  @media (max-width: 48em) {
-    html {
-      font-size: 14px; } }
 
 body {
   font-family: Montserrat;
