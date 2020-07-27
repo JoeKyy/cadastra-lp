@@ -2,7 +2,7 @@ h1 {}
 
 h2 {
     @include responsive(medium, max) {
-        font-size: font-size(xbig);
+        font-size: font-size(big);
     }
 
     @include font(bold);
@@ -19,6 +19,9 @@ h2 {
 
 h3 {
     @include font(bold);
+    @include responsive(medium, max) {
+        font-size: font-size(big);
+    }
 
     font-size: font-size(xbig);
 
